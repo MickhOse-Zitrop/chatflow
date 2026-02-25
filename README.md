@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ChatFlow
 
-## Getting Started
+**ChatFlow** — веб-мессенджер для обмена текстовыми сообщениями в режиме реального времени.  
+Поддерживает личные диалоги и групповые чаты с сохранением истории сообщений.  
+Ориентирован на быстрое, стабильное и удобное общение через браузер без установки дополнительного ПО.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Команда проекта
+
+- **Затуржинский**
+- **Никишин**
+- **Филиппов**
+
+---
+
+## Особенности проекта (MVP)
+
+- Регистрация и авторизация пользователей
+- Личные диалоги (1-на-1)
+- Групповые чаты
+- Отправка и получение сообщений в реальном времени
+- Просмотр истории сообщений
+- Отображение статуса пользователя (online/offline)
+
+---
+
+## Что не входит в MVP
+
+- Аудио- и видеозвонки
+- Push-уведомления
+- End-to-end шифрование
+- Передача файлов
+- Мобильное приложение
+
+---
+
+## Стек технологий
+
+**Frontend:**
+
+- Next.js
+- Tailwind CSS
+- shadcn/ui
+
+**Backend:**
+
+- Node.js
+- WebSocket (для real-time сообщений)
+- PostgreSQL
+
+---
+
+## Структура репозитория
+
+```
+ChatFlow/
+│
+├─ docs/ # Документы проектирования (01_about.md … 08_ready_to_code_checklist.md)
+├─ assets/ # Эскизы UI / скриншоты интерфейса
+├─ src/ # Исходный код приложения
+├─ frontend/ # Frontend проект
+└─ backend/ # Backend проект
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Документация
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Описание проекта и границы](docs/01_about.md)
+- [Требования (MUST/NICE)](docs/02_requirements.md)
+- [Нефункциональные требования](docs/02_nfr.md)
+- [UX и пользовательские сценарии](docs/03_ui_and_scenarios.md)
+- [Модель предметной области и DTO](docs/04_domain_dto_mapping.md)
+- [Архитектура слоёв](docs/05_architecture_layers.md)
+- [Диаграмма компонентов](docs/05_component_diagram.md)
+- [Интерфейсы ключевых зависимостей](docs/06_interfaces.md)
+- [Диаграмма классов](docs/06_class_diagram.md)
+- [Диаграммы последовательностей](docs/06_sequence_diagrams.md)
+- [Конфигурация, хранение и ограничения](docs/07_config_storage_constraints.md)
+- [Нагрузка и стратегия тестирования](docs/08_load_performance.md)
+- [Тестовая стратегия](docs/08_test_strategy.md)
+- [Чек-лист готовности к разработке](docs/08_ready_to_code_checklist.md)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Пример использования
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Создать личный чат и отправить сообщение
+2. Создать групповую беседу и добавить участников
+3. Проверить историю сообщений
+4. Изменить настройки (темная/светлая тема, уведомления)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Запуск проекта (локально)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Клонировать репозиторий:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    git clone <URL репозитория>
+    ```
+
+2. Установить зависимости:
+
+    ```bash
+    cd frontend && npm install
+    cd ../backend && npm install
+    ```
+
+3. Запустить проекты:
+
+    ```bash
+    cd frontend && npm run dev
+    cd ../backend && npm run start
+    ```
+
+4. Открыть браузер: http://localhost:3000
+
+---
+
+## Скриншоты интерфейса
+
+_Примеры экранов из папки `assets/ui/`:_
+
+![Главный экран](assets/ui/main_screen.png)  
+![Чат](assets/ui/chat_screen.png)  
+![Настройки](assets/ui/settings_screen.png)
+
+---
+
+## Контакты команды
+
+- Затуржинский — <email/telegram>
+- Никишин — <email/telegram>
+- Филиппов — <email/telegram>
