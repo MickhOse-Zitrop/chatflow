@@ -133,4 +133,4 @@ _Примеры экранов из папки `assets/ui/`:_
 
 - Затуржинский — <email/telegram>
 - Никишин — <email/telegram>
-- Филиппов — <email/telegram>
+- Филиппов — <email/keshencov>
