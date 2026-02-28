@@ -1,8 +1,11 @@
 import { Button, Separator } from "@/shared/components/ui";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
+import { prisma } from "@/core/prisma/prisma";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const user = await prisma.user.findFirst({});
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <div className="p-10 w-fit flex flex-col lg:gap-25 gap-20 items-center justify-center">
@@ -20,7 +23,7 @@ export default function HomePage() {
           <span className="text-center lg:text-[32px] font-semibold">
             <p>Настройся на разговор</p>
             <p className="bg-linear-to-r from-destructive to-primary bg-clip-text text-transparent">
-              без пауз
+              {user?.name}
             </p>
           </span>
         </div>
