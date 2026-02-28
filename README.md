@@ -58,9 +58,8 @@ ChatFlow/
 │
 ├─ docs/ # Документы проектирования (01_about.md … 08_ready_to_code_checklist.md)
 ├─ assets/ # Эскизы UI / скриншоты интерфейса
-├─ src/ # Исходный код приложения
-├─ frontend/ # Frontend проект
-└─ backend/ # Backend проект
+├─ app/ # Исходный код приложения
+└─ core/ # Backend приложения
 ```
 
 ---
@@ -98,21 +97,20 @@ ChatFlow/
 1. Клонировать репозиторий:
 
     ```bash
-    git clone <URL репозитория>
+    git clone https://github.com/MickhOse-Zitrop/chatflow.git
     ```
 
 2. Установить зависимости:
 
     ```bash
-    cd frontend && npm install
-    cd ../backend && npm install
+    cd chatflow
+    npm install
     ```
 
 3. Запустить проекты:
 
     ```bash
-    cd frontend && npm run dev
-    cd ../backend && npm run start
+    npm run dev
     ```
 
 4. Открыть браузер: http://localhost:3000
@@ -131,6 +129,6 @@ _Примеры экранов из папки `assets/ui/`:_
 
 ## Контакты команды
 
-- Затуржинский — <email/telegram>
-- Никишин — <email/telegram>
-- Филиппов — <email/keshencov>
+- Затуржинский - Email: mickhose.zitrop@gmail.com | Telegram: [@zitrop](https://t.me/zitrop)
+- Никишин — Email: nikishin.nikita99@mail.ru | Telegram: [@nikissshin](https://t.me/nikissshin)
+- Филиппов — Email: keshencov@gmail.com | Telegram: [@keshencov](https://t.me/keshencov)
